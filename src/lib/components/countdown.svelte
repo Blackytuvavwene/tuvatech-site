@@ -7,7 +7,7 @@ export let diff;
 // calculated time left countdown
 const timeLeft = () => {
     const now = new Date().getTime();
-    const eventDate = new Date("August 21, 2022 21:00:00").getTime();
+    const eventDate = new Date("September 21, 2022 21:00:00").getTime();
     diff = eventDate - now;
     const days = Math.floor(diff / (1000 * 60 * 60 * 24));
     const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));

@@ -1,8 +1,8 @@
 <script>
-	import Services from './components/services.svelte';
-    import Button1 from './components/button.svelte';
-    import Intro from './components/intro.svelte';
-    import Countdown from './components/countdown.svelte';
+	import Services from '../lib/components/services.svelte';
+    import Button1 from '../lib/components/button.svelte';
+    import Intro from '../lib/components/intro.svelte';
+    import Countdown from '../lib/components/countdown.svelte';
    
 </script>
 

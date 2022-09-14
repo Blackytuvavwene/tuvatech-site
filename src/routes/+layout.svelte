@@ -1,6 +1,6 @@
 <script>
-import SocialLinks from './components/social_links.svelte';
-import '../routes/components/css/global.css';
+import SocialLinks from '../lib/components/social_links.svelte';
+import '$lib/components/css/global.css';
 
 </script>
 <svelte:head>
