@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <script>
 	import Services from '../lib/components/services.svelte';
     import Button1 from '../lib/components/button.svelte';
@@ -13,6 +14,15 @@
 
 <Countdown  />
 <Services/>
+=======
+<script lang="ts">
+	import IntroSection from "$lib/components/home/IntroSection.svelte";
+
+   
+</script>
+
+<IntroSection />
+>>>>>>> 2b64401e2e8bb3ee9f9f4cd7d0663b51ad5e22c7
 
 
 

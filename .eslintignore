@@ -6,6 +6,10 @@ node_modules
 .env
 .env.*
 !.env.example
+<<<<<<< HEAD
+=======
+gh-pages.js
+>>>>>>> 2b64401e2e8bb3ee9f9f4cd7d0663b51ad5e22c7
 
 # Ignore files for PNPM, NPM and YARN
 pnpm-lock.yaml

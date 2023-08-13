@@ -1,6 +1,10 @@
 .DS_Store
 node_modules
 /build
+<<<<<<< HEAD
+=======
+/dist
+>>>>>>> 2b64401e2e8bb3ee9f9f4cd7d0663b51ad5e22c7
 /.svelte-kit
 /package
 .env
