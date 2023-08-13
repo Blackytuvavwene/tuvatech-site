@@ -1,19 +1,19 @@
-<script>
-import SocialLinks from '../lib/components/social_links.svelte';
-import '$lib/components/css/global.css';
+<script lang="ts">
+    import '../app.css';
+    import SocialLinks from '$lib/components/social_links.svelte';
+	import Header from '$lib/components/header/Header.svelte';
 
 </script>
 <svelte:head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tuva Tech site</title>
 </svelte:head>
-<header>
-    <nav></nav>
-</header>
-<main class="my-10">
+
+
+<Header/>
+<main >
     <slot></slot>
 </main>
-<footer class="w-screen bg-slate-400 h-full flex flex-col items-center justify-center">
+<footer class="w-full bg-slate-400 h-full flex flex-col items-center justify-center">
     <div>
         <div>
             <SocialLinks />

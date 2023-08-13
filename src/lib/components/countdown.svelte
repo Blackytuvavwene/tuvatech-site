@@ -1,13 +1,16 @@
 <script>
-export let day;
-export let hour;
-export let minute;
-export let second;
-export let diff;
+	import { onMount } from "svelte";
+
+
+ let day;
+ let hour;
+ let minute;
+ let second;
+ let diff;
 // calculated time left countdown
 const timeLeft = () => {
     const now = new Date().getTime();
-    const eventDate = new Date("September 21, 2022 21:00:00").getTime();
+    const eventDate = new Date("October 21, 2022 21:00:00").getTime();
     diff = eventDate - now;
     const days = Math.floor(diff / (1000 * 60 * 60 * 24));
     const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
@@ -19,14 +22,17 @@ const timeLeft = () => {
     return { days, hours, minutes, seconds };
 }
 
+onMount(() => {
+    const timer = setInterval(() => {
+        const { days, hours, minutes, seconds } = timeLeft();
+        day = days;
+        hour = hours;
+        minute = minutes;
+        second = seconds;
+    }, 1000);
+    return () => clearInterval(timer);
+});
 
-setInterval(() => {
-    const time = timeLeft();
-    day= time.days;
-    hour = time.hours;
-    minute = time.minutes;
-    second = time.seconds;
-}, 1000);
 
 </script>
 
